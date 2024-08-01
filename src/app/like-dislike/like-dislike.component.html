@@ -1,0 +1,10 @@
+<button class="like-button" [class.liked]="isLiked" (click)="liked()">
+  Like | <span class="likes-counter"> {{ likeCount }} </span>
+</button>
+<button
+  class="dislike-button"
+  [class.disliked]="isDisliked"
+  (click)="disliked()"
+>
+  disLike | <span class="dislikes-counter"> {{ dislikeCount }} </span>
+</button>
